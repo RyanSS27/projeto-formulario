@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'noto-sans';
+    src: url(../noto-sans/NotoSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'noto-bold';
+    src: url(../noto-sans/NotoSans-Bold.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'noto-sans', times, Helvetica, sans-serif;
+}
+
+body {
+    background: #292929 url(../pictures/florest.jpg) center center / cover no-repeat fixed;
+}
+
+.container {
+    height: 100vh;
+    max-width: 500px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.tamanho {
+    max-width: 950px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    background-color: #00b0aa;
+    text-align: center;
+
+    height: 100%;
+    max-width: 450px;
+}*/
+
+.create-account {
+    max-width: 500px;
+}
+
+form {
+    background-color: #ffffff10;
+    backdrop-filter: blur(25px);
+    color: #fff;
+    font: normal normal bold 'noto-sans', arial, helvetica, sans-serif;
+
+    width: 100%;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 2px;
+}
+
+h1 {
+    margin: 25px 0px 0px 0px;
+    font: normal normal bold 'noto-bold', arial, helvetica, sans-serif;
+}
+
+.campos-de-preenchimento {
+    max-width: 500px;
+    margin: 25px auto 50px auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campos {
+    margin-top: 25px;
+}
+
+.campos > input {
+    background-color: #ffffff7c;
+
+    height: 30px;
+    min-width: 215px;
+    border-radius: 3px;
+    border: 0px;
+}
+
+.legenda {
+    color: #cbcbcb;
+    font: normal bold small 'noto-sans', arial, helvetica, sans-serif;
+}
+
+.campos {
+    display: inline-block;
+}
+
+.cadastro {
+    background-color: white;
+    font-weight: bolder;
+
+    height: 30px;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    
+    display: block;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <form action="lugar-nenhum.php" method="post" autocomplete="on">
+                <header>
+                    <h1>Cadastro</h1>
+                    <div class="entrar">Entrar</div>
+                </header>
+                <div class="campos-de-preenchimento">
+                    <div class="campos">
+                        <label for="inome">
+                            <div class="legenda">Primeiro nome</div>
+                        </label>
+                        <input type="text" name="nome" id="inome" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="campos">
+                        <label for="isobrenome">
+                            <div class="legenda">Sobrenome</div>
+                        </label>
+                        <input type="text" name="sobrenome" id="isobrenome" class="campo" autocomplete="family-name" placeholder="Digite o seu sobrenome">
+                    </div class="campos">
+                    <div class="campos">
+                        <label for="iemail">
+                            <div class="legenda">E-mail</div>
+                        </label>
+                        <input type="email" name="email" id="iemail" class="campo" autocomplete="email">
+                    </div>
+                    <div class="campos">
+                        <label for="inum-cel">
+                            <div class="legenda">Celular</div>
+                        </label>
+                        <input type="text" name="num-cel" id="inum-cel" class="campo" autocomplete="tel" placeholder="[xx] xx xxxx-xxxx">
+                    </div>
+                    <div class="campos">
+                        <label for="isenha">
+                            <div class="legenda">Senha</div>
+                        </label>
+                        <input type="password" name="senha" id="isenha" class="campo" autocomplete="new-password" placeholder="Digite sua senha" minlength="7">
+                    </div>
+                    <div class="campos">
+                        <label for="iconfirme">
+                            <div class="legenda">Confime sua senha</div>
+                        </label>
+                        <input type="password" name="confirme" id="iconfirme" class="campo">
+                    </div>
+                </div>
+                <div class="generos">
+                    <div class="legenda">Gênero</div>
+                    <!--opcoes-->
+                    <input type="radio" name="genero" id="imasculino"><label for="imasculino">Masculino</label>
+                    <input type="radio" name="genero" id="ifeminino"><label for="ifeminino">Feminino</label>
+                    <input type="radio" name="genero" id="ivoyage"><label for="ivoyage">Voyage</label>
+                    <input type="radio" name="genero" id="iisento" checked><label for="iisento">Prefiro não informar</label>
+                </div>
+                <input type="submit" value="Cadastro" class="cadastro">
+            </form>
+    </div>
+</body>
+</html>
