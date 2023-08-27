@@ -16,6 +16,11 @@
     font-family: 'noto-sans', times, Helvetica, sans-serif;
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background: #292929 url(../pictures/florest.jpg) center center / cover no-repeat fixed;
 }
@@ -30,41 +35,44 @@ body {
     justify-content: center;
 }
 
-/*.tamanho {
-    max-width: 950px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.login {
-    background-color: #00b0aa;
-    text-align: center;
-
-    height: 100%;
-    max-width: 450px;
-}*/
-
 .create-account {
     max-width: 500px;
 }
 
 form {
     background-color: #ffffff10;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(20px);
+
     color: #fff;
     font: normal normal bold 'noto-sans', arial, helvetica, sans-serif;
 
     width: 100%;
     padding: 25px;
     border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 2px;
+    border-radius: 5px;
+}
+
+header {
+    margin: 25px 0px 0px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
-    margin: 25px 0px 0px 0px;
+    margin: 0px;
     font: normal normal bold 'noto-bold', arial, helvetica, sans-serif;
+}
+
+.entrar {
+    background-color: #3c004b;
+    font-size: small;
+    text-align: center;
+
+    
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
 .campos-de-preenchimento {
@@ -85,12 +93,17 @@ h1 {
 
     height: 30px;
     min-width: 215px;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 0px;
 }
 
+::placeholder {
+    color: #6e4e76;
+    font-weight: bold;
+}
+
 .legenda {
-    color: #cbcbcb;
+    color: #e9e9e9;
     font: normal bold small 'noto-sans', arial, helvetica, sans-serif;
 }
 
@@ -100,11 +113,13 @@ h1 {
 
 .cadastro {
     background-color: white;
+    color: #3c004b;
     font-weight: bolder;
 
     height: 30px;
     width: 100%;
     margin: 50px 0px 0px 0px;
+    border: 0px;
     
     display: block;
 }
