@@ -111,6 +111,10 @@ h1 {
     display: inline-block;
 }
 
+.opcoes {
+    display: inline-block;
+}
+
 .cadastro {
     background-color: white;
     color: #3c004b;

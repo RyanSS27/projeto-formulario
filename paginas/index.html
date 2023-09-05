@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../pictures/meuicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" media="all">
+    <link rel="stylesheet" href="../styles/retrato.css" media="screen and (orientation: portrait)">
     <title>Formulário</title>
 </head>
 <body>
@@ -55,10 +56,10 @@
                 <div class="generos">
                     <div class="legenda">Gênero</div>
 
-                    <input type="radio" name="genero" id="imasculino"><label for="imasculino">Masculino</label>
-                    <input type="radio" name="genero" id="ifeminino"><label for="ifeminino">Feminino</label>
-                    <input type="radio" name="genero" id="ivoyage"><label for="ivoyage">Voyage</label>
-                    <input type="radio" name="genero" id="iisento" checked><label for="iisento">Prefiro não informar</label>
+                    <div class="opcoes"><input type="radio" name="genero" id="imasculino"><label for="imasculino">Masculino</label></div>
+                    <div class="opcoes"><input type="radio" name="genero" id="ifeminino"><label for="ifeminino">Feminino</label></div>
+                    <div class="opcoes"><input type="radio" name="genero" id="ivoyage"><label for="ivoyage">Voyage</label></div>
+                    <div class="opcoes"><input type="radio" name="genero" id="iisento" checked><label for="iisento">Prefiro não informar</label></div>
                 </div>
                 <input type="submit" value="Cadastro" class="cadastro">
             </form>
