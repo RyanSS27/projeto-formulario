@@ -1,0 +1,20 @@
+body {
+    background-image: url(../pictures/dia.png);
+}
+
+h1 {
+    color: #3c004b;
+}
+
+form {
+    background-color: #3535354b;
+}
+
+.entrar {
+    background-color: #FFC0C2;
+    color: #3c004b;
+}
+
+.legenda {
+    color: white;
+}
