@@ -21,9 +21,14 @@ form {
 }
 
 .entrar {
-    background-color: #FFC0C2;
+    background-color: #8a98e58b;
     color: #3c004b;
 }
 
 .opcoes {
+}
+
+.cadastro {
+    background-color: #5d0075;
+    color: whitesmoke;
 }
