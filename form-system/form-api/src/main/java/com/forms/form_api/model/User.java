@@ -4,12 +4,28 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+import java.util.Objects;
+
 @Getter
+@Setter
 @Entity
 @Table(name = "users")
-public class User {
-    // As colunas da minha tabela
+public class User implements Serializable {
+    private final long serialVersionID = 1;
 
+    // As colunas da minha tabela
+    public User() {}
+
+    public User(Long id, String firstName, String lastName, String email, String phoneNumber, String password, String gender) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+        this.gender = gender;
+    }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -29,5 +45,16 @@ public class User {
     private String password;
     private String gender;
 
-    public User() {}
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(id, user.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
 }
