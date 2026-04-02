@@ -10,7 +10,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @Entity
-@Table(name = "users")
+@Table(name = "tb_users")
 public class User implements Serializable {
     private final long serialVersionID = 1;
 
@@ -30,7 +30,6 @@ public class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Setter
     @Column(name = "first_name", nullable = false)
     private String firstName;
 
@@ -39,6 +38,8 @@ public class User implements Serializable {
 
     @Column(nullable = false, unique = true)
     private String email;
+
+    @Column(name = "phone_number", unique = false)
     private String phoneNumber;
 
     @Column(nullable = false)
